@@ -232,3 +232,80 @@ footer {
     max-width: 220px;
   }
 }
+/* === Compact layout adjustments === */
+
+/* Reduce the height of the top banner */
+.hero {
+  min-height: auto;
+  padding-bottom: 45px;
+}
+
+/* Reduce spacing inside the navigation bar */
+.navbar {
+  padding: 20px 0;
+}
+
+/* Pull the hero text upward and reduce empty space */
+.hero-content {
+  margin: 45px auto 0;
+  max-width: 850px;
+}
+
+/* Reduce the main homepage title size */
+h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin: 14px 0;
+}
+
+/* Slightly reduce section title sizes */
+h2 {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  margin-bottom: 18px;
+}
+
+/* Reduce large gaps between sections */
+.section {
+  padding: 42px 0;
+}
+
+/* Reduce card padding slightly */
+.project-card,
+.paper-card {
+  padding: 24px;
+}
+
+/* Reduce paragraph spacing inside cards */
+.project-card p,
+.paper-card p,
+.about-bio-column p {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+/* Make the About section sit closer to the hero */
+.about-section {
+  padding-top: 50px;
+}
+
+/* Reduce spacing around the About card */
+.about-card-horizontal {
+  padding: 28px;
+  gap: 28px;
+}
+
+/* Make tags a little more compact */
+.tags {
+  margin: 18px 0;
+  gap: 8px;
+}
+
+.tags span {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
+/* Reduce footer spacing */
+footer {
+  padding: 28px;
+}
