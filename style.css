@@ -168,3 +168,67 @@ footer {
     justify-content: center;
   }
 }
+/* === About section: photo next to bio === */
+.about-section {
+  padding-top: 80px;
+}
+
+.about-card-horizontal {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px) 1fr;
+  gap: 34px;
+  align-items: start;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 20px 45px rgba(23, 32, 51, 0.1);
+}
+
+.about-photo-column {
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 6px solid #ffffff;
+  box-shadow: 0 18px 35px rgba(23, 32, 51, 0.18);
+  background: #eef0f6;
+}
+
+.about-bio-column h2 {
+  margin-top: 0;
+}
+
+.about-bio-column a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-bio-column a:hover {
+  text-decoration: underline;
+}
+
+.about-links {
+  margin-top: 22px;
+}
+
+@media (max-width: 800px) {
+  .about-card-horizontal {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-column {
+    justify-content: flex-start;
+  }
+
+  .about-photo {
+    max-width: 220px;
+  }
+}
