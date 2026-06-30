@@ -178,3 +178,165 @@ pre {
   border: 1px solid var(--border);
   box-shadow: 0 14px 34px rgba(21, 87, 153, 0.10);
 }
+/* === Post-Graduate Researchers feature section === */
+
+.pgr-feature-section {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 44px 0 48px;
+}
+
+.pgr-banner {
+  color: #ffffff;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.18), transparent 34%),
+    linear-gradient(120deg, var(--cayman-a), var(--cayman-b));
+  border-radius: 24px;
+  padding: 38px 34px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
+}
+
+.pgr-banner .eyebrow {
+  color: rgba(255, 255, 255, 0.86);
+  margin-bottom: 8px;
+}
+
+.pgr-banner h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 8px 0 12px;
+}
+
+.pgr-banner p {
+  max-width: 780px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+}
+
+.pgr-card-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 22px;
+  align-items: start;
+}
+
+.pgr-feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pgr-feature-card::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--cayman-a), var(--cayman-b));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pgr-feature-card-wide {
+  grid-column: 1 / -1;
+  max-width: 980px;
+  justify-self: center;
+  width: 100%;
+}
+
+.pgr-card-header {
+  margin-bottom: 18px;
+}
+
+.pgr-card-kicker {
+  display: inline-flex;
+  align-items: center;
+  background: #eef6f4;
+  color: #14634a;
+  border: 1px solid #cce9de;
+  border-radius: 999px;
+  padding: 6px 11px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.pgr-card-header h3 {
+  margin: 6px 0 0;
+  font-size: 1.45rem;
+}
+
+.pgr-list {
+  margin: 0;
+  padding-left: 1.35rem;
+}
+
+.pgr-list li {
+  margin-bottom: 15px;
+  padding-left: 6px;
+}
+
+.pgr-list li:last-child {
+  margin-bottom: 0;
+}
+
+.pgr-list li::marker {
+  color: var(--cayman-b);
+  font-weight: 900;
+}
+
+.pgr-list strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.02rem;
+  margin-bottom: 3px;
+}
+
+.pgr-list span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.past-pgr-list {
+  columns: 2;
+  column-gap: 36px;
+}
+
+.past-pgr-list li {
+  break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+  .pgr-card-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .pgr-feature-card-wide {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .past-pgr-list {
+    columns: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .pgr-banner {
+    padding: 30px 22px;
+  }
+
+  .pgr-feature-card {
+    padding: 24px;
+  }
+}
